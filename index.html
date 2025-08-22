@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEMI Gama</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/src/styles.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="navbar-left">
-                <img src="src/imgs/logo-cemi.svg" alt="">
+                <a href="#"><img src="src/imgs/logo-cemi.svg" alt=""></a>
             </div>
             <div class="navbar-right">
                 <ul class="navbar">
-                    <li class="navbar-item"><a href="">Inicio</a></li>
+                    <li class="navbar-item"><a href="">Início</a></li>
                     <li class="navbar-item"><a href="">Estude no Cemi</a></li>
                     <li class="navbar-item"><a href="">Historia</a></li>
                     <li class="navbar-item"><a href="">Nossa equipe</a></li>
@@ -24,10 +25,22 @@
         </nav>
     </header>
     <main>
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="src/imgs/hero2.jpg" alt=""><p>50% dos estudantes do CEMI Gama conquistaram vagas em universidades públicas.</p></div>
+                <div class="swiper-slide"><img src="src/imgs/hero3.jpg" alt="">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>   
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            
+        </div>
         <p>Este é um exemplo de página HTML para o CEMI Gama.</p>
     </main>
     <footer>
         <p>&copy; 2025 CEMI Gama. Todos os direitos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 </html>
