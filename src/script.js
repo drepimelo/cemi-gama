@@ -1,12 +1,4 @@
-new Swiper('.hero-swiper', {
-    effect: 'fade',
-    autoplay: {
-      delay: 4000,
-    },
-    loop: true,
-  });
-
-  const swiper = new Swiper(".hero-swiper", {
+const swiper = new Swiper(".hero-swiper", {
   effect: "fade",
   loop: true,
   autoplay: {
@@ -17,5 +9,9 @@ new Swiper('.hero-swiper', {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });
